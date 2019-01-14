@@ -1,0 +1,21 @@
+{
+  "name": "Print this page",
+  "description": "Adds a print button to the browser.",
+  "version": "1.2",
+  "browser_action": {
+      "default_title": "Print this page",
+      "default_popup" : "popup.html"
+  },
+  "permissions" : ["tabs","<all_urls>"],
+  "background" : {
+  	"scripts" : ["event.js"],
+  	"persistent" : true
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.google.com/*"],
+      "js": ["cs.js"]
+    }
+  ],
+  "manifest_version": 2
+}

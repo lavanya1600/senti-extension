@@ -1,0 +1,15 @@
+{
+  "name": "test_extension",
+  "version": "1.0.0",
+  "description": "A chrome extension to analyze the sentiment of the user's Google searches.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "indico.io": "^0.10.5"
+  }
+}
